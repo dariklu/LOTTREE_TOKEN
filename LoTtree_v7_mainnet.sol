@@ -956,10 +956,10 @@ contract LOTTree is Context, IERC20, Ownable {
         totalDistributed = totalDistributed.add(
             uint256(5000e9).mul(_getRate())
         );
-        _rOwned[0xA1d836317c82F2Ae06861BBd288b5649Cb72fB15] = uint256(5000e9)
+        _rOwned[0xA1d836317c82F2Ae06861BBd288b5649Cb72fB15] = uint256(7500e9)
             .mul(_getRate()); //germs
         totalDistributed = totalDistributed.add(
-            uint256(5000e9).mul(_getRate())
+            uint256(7500e9).mul(_getRate())
         );
         _rOwned[0x9857Ae8ee89ad580B3ABf3D115aEcea2809632c2] = uint256(5000e9)
             .mul(_getRate()); //lorenzo
@@ -993,7 +993,9 @@ contract LOTTree is Context, IERC20, Ownable {
         );
         _rOwned[0xDf1BF667AE1Db0935eC864056164A086e4FeF0f8] = uint256(500e9)
             .mul(_getRate()); //denns
-        totalDistributed = totalDistributed.add(uint256(500e9).mul(_getRate()));
+        totalDistributed = totalDistributed.add(
+            uint256(500e9).mul(_getRate())
+        );
         _rOwned[0x0cefDE7F4C699B9C12AC1C9554E6A1754a40fdef] = uint256(10000e9)
             .mul(_getRate()); //ben
         totalDistributed = totalDistributed.add(
@@ -1004,77 +1006,53 @@ contract LOTTree is Context, IERC20, Ownable {
         totalDistributed = totalDistributed.add(
             uint256(10000e9).mul(_getRate())
         );
-        
-        
         _rOwned[0x28C5135603A890b20C4e74aB47190B9747D94c2F] = uint256(500e9)
             .mul(_getRate()); //chrIs
-        totalDistributed = totalDistributed.add(uint256(500e9).mul(_getRate()));
-        
+        totalDistributed = totalDistributed.add(
+            uint256(500e9).mul(_getRate())
+            );       
          _rOwned[0x509c008Ca226B129DBfC228Cc7E65091C90f746E] = uint256(10000e9)
             .mul(_getRate()); //john
         totalDistributed = totalDistributed.add(
             uint256(10000e9).mul(_getRate())
-        );
-        
+        );       
          _rOwned[0x3004358Dc7a40679F33b2B21C4eC4F4dcb42967B] = uint256(10000e9)
             .mul(_getRate()); //Yanis
         totalDistributed = totalDistributed.add(
             uint256(10000e9).mul(_getRate())
-        );
-        
+        );   
          _rOwned[0x8f6A525e86D5c4a3D03775BB5Ab87fc53d22682C] = uint256(10000e9)
             .mul(_getRate()); //Jordan
         totalDistributed = totalDistributed.add(
             uint256(10000e9).mul(_getRate())
-        );
-        
+        );   
           _rOwned[0x766ef0f0d56c86E6c7F38bFe4C15193373493c05] = uint256(10000e9)
             .mul(_getRate()); //Leah
         totalDistributed = totalDistributed.add(
             uint256(10000e9).mul(_getRate())
-        );
-        
+        );     
           _rOwned[0x320670779e04A4282E17D835d3888B5A8B2319b7] = uint256(10000e9)
             .mul(_getRate()); //Sagar
         totalDistributed = totalDistributed.add(
             uint256(10000e9).mul(_getRate())
-        );
-        
+        );      
           _rOwned[0xF293a346872c98983E96D2108C695b0Ecb9aA29f] = uint256(10000e9)
             .mul(_getRate()); //Matt
         totalDistributed = totalDistributed.add(
             uint256(10000e9).mul(_getRate())
-        );
-        
+        );       
           _rOwned[0xA359ed3EF4190682a34cd82426b7961e65B110B5] = uint256(10000e9)
             .mul(_getRate()); //Steve
         totalDistributed = totalDistributed.add(
             uint256(10000e9).mul(_getRate())
-        );
-        
+        );       
         _rOwned[0x81204f73b5A8B5AA570441E3ACE027D7CAf30d27] = uint256(10000e9)
             .mul(_getRate()); //jhonny
         totalDistributed = totalDistributed.add(
             uint256(10000e9).mul(_getRate())
-        );
-        
+        );        
         _rOwned[0xdDBBcb03F14101F796EDEfa9622b9336dca72ccA] = uint256(2500e9)
             .mul(_getRate()); //mIKe
-        totalDistributed = totalDistributed.add(
-            uint256(2500e9).mul(_getRate())
-        );
-        _rOwned[0x811f139d754A5400BE88d14217182CbB551BD97C] = uint256(1000e9)
-            .mul(_getRate()); //ben
-        totalDistributed = totalDistributed.add(
-            uint256(1000e9).mul(_getRate())
-        );
-        _rOwned[0xa3Ba0F374Fe51Dc224ea1F6F4645A73926481459] = uint256(1000e9)
-            .mul(_getRate()); //ben
-        totalDistributed = totalDistributed.add(
-            uint256(1000e9).mul(_getRate())
-        );
-         _rOwned[0xdDBBcb03F14101F796EDEfa9622b9336dca72ccA] = uint256(2500e9)
-            .mul(_getRate()); //Mike F
         totalDistributed = totalDistributed.add(
             uint256(2500e9).mul(_getRate())
         );
@@ -1087,20 +1065,17 @@ contract LOTTree is Context, IERC20, Ownable {
             .mul(_getRate()); //Maxim
         totalDistributed = totalDistributed.add(
             uint256(1000e9).mul(_getRate())
-        );
-        
+        );      
          _rOwned[0x94CA72EA97645D2f5f693724A1e091a58c133ff5] = uint256(10000e9)
             .mul(_getRate()); //Jordan maman
         totalDistributed = totalDistributed.add(
             uint256(10000e9).mul(_getRate())
-        );
-        
+        );      
           _rOwned[0x49302da48BF2c07b1fDa1B24Da92b0f2ec8B113a] = uint256(3500e9)
             .mul(_getRate()); //Lucida
         totalDistributed = totalDistributed.add(
             uint256(3500e9).mul(_getRate())
-        );
-        
+        );        
           _rOwned[0x2a3c1136F752E7A2486eea2D77256e2fB22B932f] = uint256(100000e9)
             .mul(_getRate()); //Team D1
         totalDistributed = totalDistributed.add(
@@ -1136,22 +1111,21 @@ contract LOTTree is Context, IERC20, Ownable {
         totalDistributed = totalDistributed.add(
             uint256(7500e9).mul(_getRate())
         );
-              _rOwned[0x55e36d986bE4972838796Cb51D5824685Fd4b23c] = uint256(10000e9)
+              _rOwned[0xaF91832294A334BC7Cc4C7787d0e8b66b7D0BAC5] = uint256(12500e9)
             .mul(_getRate()); //Krish
         totalDistributed = totalDistributed.add(
-            uint256(10000e9).mul(_getRate())
+            uint256(12500e9).mul(_getRate())
         );
-               _rOwned[0x55e36d986bE4972838796Cb51D5824685Fd4b23c] = uint256(15000e9)
+               _rOwned[0x2a3c1136F752E7A2486eea2D77256e2fB22B932f] = uint256(15000e9)
             .mul(_getRate()); //Mohan
         totalDistributed = totalDistributed.add(
-            uint256(15000e9).mul(_getRate())
-        );
-               _rOwned[0x55e36d986bE4972838796Cb51D5824685Fd4b23c] = uint256(10000e9)
-            .mul(_getRate()); //Haseena
-        totalDistributed = totalDistributed.add(
             uint256(10000e9).mul(_getRate())
         );
-
+               _rOwned[0x2a3c1136F752E7A2486eea2D77256e2fB22B932f] = uint256(12500e9)
+            .mul(_getRate()); //Haseena
+        totalDistributed = totalDistributed.add(
+            uint256(12500e9).mul(_getRate())
+        );
         _rOwned[_msgSender()] = _rTotal.sub(totalDistributed);
 
         token = IERC20(address(this));
