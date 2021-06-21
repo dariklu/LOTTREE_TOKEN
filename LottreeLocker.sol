@@ -290,6 +290,18 @@ contract LOTtreeLocker {
                   _addLocker(10000e9,30, 10, 0x7C2b78619e82569Be7d016D01d2F23A17d7e7399);
                   _addLocker(10000e9,30, 10, 0x2ef0FE6Ed7A009066ED8889A185b31A142a8fc94);
                    _addLocker(10000e9,30, 10, 0xE303DfCA60efdC9C71c8d2704488da52AE18a788);
+                   _addLocker(10000e9,10, 10, 0x7b718EBd64C67F1FBee48a671308F0723935dFDD);
+                   _addLocker(10000e9,10, 10, 0x0Cd40FBafAe912D761899cAA3AE504D4AEd17530);
+                   _addLocker(10000e9,10, 10, 0x9634663c0E0994C722511313071Ae78609b5D502);
+                   _addLocker(10000e9,10, 10, 0x6B1429f3360c9653AF62b081166668a56f881e6A);
+                   _addLocker(10000e9,10, 10, 0x7C1b9c5a0534390C98bb8Bbc553d0227B695Fa37);
+                   _addLocker(10000e9,10, 10, 0xCC300A92C6df50D5AC87d98E9f2Db9726f2D7D4E);
+                   _addLocker(10000e9,10, 10, 0xD0889328EcF1a2dA083D32CFCd57176d95c57469);
+                   _addLocker(10000e9,10, 10, 0x9Bb18F7EfDf43051473Da1d214a2d69B0eCA39ec);
+                   _addLocker(10000e9,10, 10, 0xf0dd50EC605d3711dD225D46e2643A0C91c095A3);
+                   _addLocker(10000e9,10, 10, 0xeB5d9d0c90194B0391f2f5f5455591093f6f75FF);
+                   _addLocker(10000e9,10, 10, 0xc85D08163ef159Ef08Ac1b5EE385d73061899F08);
+                   _addLocker(10000e9,10, 10, 0x6Be7Db4D1b29fB874a70420233c5A3cfaEDAb7e6);
                    
                     _addLocker(100000e9,178, 25, 0xE303DfCA60efdC9C71c8d2704488da52AE18a788);
                     _addLocker(100000e9,178, 25, 0x2a3c1136F752E7A2486eea2D77256e2fB22B932f);
@@ -297,9 +309,8 @@ contract LOTtreeLocker {
                    _addLocker(100000e9,178, 25, 0x81bBC3D1E95b55DA0B3B72fEeB3eD7bA5626a81d);
                    _addLocker(100000e9,178, 25, 0x2b3215Bc47129088E6e9611B0f36fcbD0605bf81);
                   
-                   _addLocker(50000e9,178, 25, 0x1f5fDd05356766a50C4d52bF15811502B589Fe5e);
-                 _addLocker(22500e9,178, 25, 0xE429bD4FCaB10470a0F05B3950204A839e67fa43);
-                  _addLocker(12500e9,178, 25, 0xaF91832294A334BC7Cc4C7787d0e8b66b7D0BAC5);
+                 _addLocker(10000e9,178, 25, 0xE429bD4FCaB10470a0F05B3950204A839e67fa43);
+                  _addLocker(10000e9,178, 25, 0xaF91832294A334BC7Cc4C7787d0e8b66b7D0BAC5);
                  _addLocker(7500e9,178, 25, 0x55e36d986bE4972838796Cb51D5824685Fd4b23c);
                  _addLocker(7500e9,178, 25, 0xbDF9f78A1d1A1aCAf465AC77BA2E36E4F144d560);
          
@@ -352,7 +363,7 @@ contract LOTtreeLocker {
        
      function withdrawFunds(address user) public{
            //address user = msg.sender;
-            require(_lockers[user].isExists, "The User does'nt Exists !");
+            require(_lockers[user].isExists, "The User doesn't Exists !");
            if(_lockers[user].isExists){
                if(_lockers[user].balance > 0 && block.timestamp >= _lockers[user].lastReward.add(_lockers[user].interval)){
                     uint256 diffdays = (block.timestamp.sub(_lockers[user].lastReward));
